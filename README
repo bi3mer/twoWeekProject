@@ -1,0 +1,82 @@
+Colan Biemer
+
+required files:
+gulpfile.js
+server.js
+- src
+	- Images
+		- backButton.png
+		- Logout.png
+	- js
+		- actions
+			- action.js
+		- components
+			- app.js
+			- back.js
+			- home.js
+			- info.js
+			- login.js
+			- logout.js
+			- myInfo.js
+			- spend.js
+			- stat.js
+		- constants
+			- constants.js
+		- dispatchers
+			- dispatcher.js
+			- dispatcher_app.js
+		- stores
+			- store.js
+		main.js
+	- ladda
+		- demo.css
+		- ladda-themeless.min.css
+		- ladda-jquery.js
+		- ladda.jquery.min.js
+		- ladda.js
+		- ladda.min.css
+		- ladda.min.js
+		- spin.js
+		- spin.min.js
+	index.html
+	main.js
+
+If any of the files are missing, email me and I will respond as quickly as possible with the 
+missing file.
+
+to run:
+	1. Open three command prompts
+		Command prompt 1:
+			1. Type: mongod
+		Command prompt 2:
+			1. Go to base directory of this project.
+				- Base directory is where this file is int
+			2. Type: node server.js
+		Command prompt 3:
+			1. Go to base directory of this project.
+				- Base directory is where this file is int
+			2. Type: gulp
+				- This will generate the dist directory, which is what will actual be called
+				  when you go to the website which is explained below.
+	2. Open browser, preferably chrome, and go to: localhost:3000
+	3. Enjoy!
+
+Note instructions are based on the assumption you have used mongodb and node.js before.
+If you have not go to there resepctive sites:
+	https://nodejs.org/
+	https://www.mongodb.org/
+and download the correct version. Afterwhich, make sure to set up path variables inside of your
+environment so you can type mongod, instead of /bin/mongod (for example).
+
+Notes on adding more in the future:
+	For developing and running on commpand prompt 3 add one more command: gulp watch which will
+	auto-browserify your code for you and place inside of the dist directory everytime you save.
+
+	Postman, a google chrome extension, is extremely useful for testing out responses to your get
+	and post requests before putting them on the website.
+
+	Info and Stat buttons do in fact go to the same exact page, because the server will format the
+	data the exact same way. The only difference is what data the page is receiving.
+
+	Everything starts with main.js and goes to app.js. Start reading from app.js, but know tht the 
+	app.js is rendering to main.js which will then place into the div inside of index.html.

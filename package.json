@@ -1,0 +1,38 @@
+{
+  "name": "twoWeekProject",
+  "version": "0.0.0",
+  "description": "Colan Biemer Ipipeline cbiemer@ipipeline.com",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "es6-promise": "^3.0.2",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "invariant": "^2.1.0",
+    "mongo": "^0.1.0",
+    "jquery": "^2.1.4",
+    "mongod": "^1.3.0",
+    "mongoose": "^4.1.5",
+    "multer": "^1.0.3",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bi3mer/twoWeekProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bi3mer/twoWeekProject/issues"
+  },
+  "homepage": "https://github.com/bi3mer/twoWeekProject"
+}
